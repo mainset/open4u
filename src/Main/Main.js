@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Grid, Image } from 'semantic-ui-react';
+
+// import DigestSignUpForm from './../DigestSignUpForm';
 
 import logo from './../assets/open4u-logo.svg';
 
 import './Main.css';
 
-class Main extends Component {
-  render() {
-    return (
-      <div className="main">
-        <header className="main-header">
-          <img src={logo} className="main-logo" alt="logo" />
-          <h1 className="main-title">Welcome to React</h1>
-        </header>
-        <p className="main-intro">
-          To get started, edit <code>src/Main.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const Main = () => (
+  <Grid className="main" verticalAlign="middle" columns={3}>
+    <Grid.Row centered>
+      <Grid.Column textAlign="center">
+        <Image src={logo} size="small" centered />
+
+        {/* TODO: create digest signup form  */}
+        {/* <DigestSignUpForm /> */}
+      </Grid.Column>
+    </Grid.Row>
+  </Grid>
+);
 
 export default Main;
