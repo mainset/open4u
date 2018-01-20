@@ -1,4 +1,4 @@
-.App {
+.main {
   text-align: center;
 
   &-logo {
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes main-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
