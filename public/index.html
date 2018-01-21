@@ -19,7 +19,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>open4u community</title>
+    <title>Open Source Community of Ukrainians</title>
+
+    <!-- BEGIN: Mailchimp integration -->
+    <script id="mcjs">
+      !function(c, h, i, m, p) {
+        m = c.createElement(h),
+        p = c.getElementsByTagName(h)[0],
+        m.async = 1,
+        m.src = i,
+        p.parentNode.insertBefore(m, p)
+      } (
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/%REACT_APP_MAILCHIMP_USER_ID%.js"
+      );
+    </script>
+    <!-- END: Mailchimp integration -->
   </head>
   <body>
     <noscript>
