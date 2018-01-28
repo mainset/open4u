@@ -1,0 +1,11 @@
+{
+  "root": "build/",
+  "proxies": {
+    "/api-mailchimp-resource/": {
+      "origin": "${REACT_APP_MAILCHIMP_API_URL}",
+      "pathRewrite": {
+        "^/api-mailchimp-resource": "/"
+      }
+    }
+  }
+}
