@@ -1,0 +1,35 @@
+.application-form {
+  > .attached.segment {
+    > .ui.form {
+      .form--navigation {;
+        text-align: right;
+      }
+    }
+  }
+
+  // Disable on mobile phones
+  @media (min-width: 768px) {
+    > .attached.segment {
+      min-height: 490px;
+
+      > .ui.form,
+      > .ui.grid {
+        height: 400px;
+      }
+
+      > .ui.form {
+        .form--navigation {
+          bottom: -4rem;
+          position: absolute;
+          text-align: right;
+          width: 100%;
+        }
+      }
+
+      .input--fixed {
+        min-height: 80px;
+        margin: 0;
+      }
+    }
+  }
+}
